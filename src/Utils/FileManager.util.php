@@ -10,9 +10,9 @@ class FileManager
      * 
      * @return void
      */
-    function saveFile($base64, $output)
+    static function saveFile($base64, $output)
     {
-        $this->deleteFile($output);
+        FileManager::deleteFile($output);
 
         $base64 = str_replace("data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,", "", $base64);
 
@@ -28,7 +28,7 @@ class FileManager
      * 
      * @return void
      */
-    function deleteFile($file)
+    static function deleteFile($file)
     {
         if (file_exists($file)) {
             unlink($file);
