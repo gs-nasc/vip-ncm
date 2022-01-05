@@ -18,7 +18,9 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "VIPNCM\\": "src/"
+            "VIPNCM\\": "src/",
+            "VIPNCM\\Utils\\": "src/Utils/",
+            "VIPNCM\\Models\\": "src/Models/"
         }
     }
 }

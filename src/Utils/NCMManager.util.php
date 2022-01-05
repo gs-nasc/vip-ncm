@@ -17,7 +17,7 @@ class NCMManager {
      * 
      * @return NCM
      */
-    function fromJSON($json, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
+    static function fromJSON($json, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
         $json = json_decode($json, true);
         $ncm = new NCM();
         $ncm->codigo = $json[$codigoField];
@@ -40,7 +40,7 @@ class NCMManager {
      * 
      * @return NCM
      */
-    function fromArray($array, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
+    static function fromArray($array, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
         $ncm = new NCM();
         $ncm->codigo = $array[$codigoField];
         $ncm->descricao = $array[$descricaoField];
@@ -62,7 +62,7 @@ class NCMManager {
      * 
      * @return NCM
      */
-    function fromMap($map, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
+    static function fromMap($map, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
         
         $ncms = array();
 
@@ -86,14 +86,14 @@ class NCMManager {
     /**
      * @param NCM ncm
      */
-    function NCMtoJSON($ncm) {
+    static function NCMtoJSON($ncm) {
         return json_encode($ncm);
     }
 
     /**
      * @param array array
      */
-    function ArrayToJSON($array) {
+    static function ArrayToJSON($array) {
         return json_encode($array);
     }
 }
