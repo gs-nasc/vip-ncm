@@ -17,7 +17,6 @@ document.getElementById('form').addEventListener("submit", (e) => {
 
     if (fileInput.files.length === 0) {
         alert('Please select a file');
-        return;
     }else {
         getBase64(fileInput.files[0]).then((result) => console.log(result));
     }
