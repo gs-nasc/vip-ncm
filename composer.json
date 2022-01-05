@@ -1,0 +1,24 @@
+{
+    "name": "gs-nasc/vip-ncm",
+    "description": "PHP Package for NCM Control",
+    "type": "library",
+    "keywords": [
+        "ncm",
+        "vip",
+        "vipncm"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Nascimento",
+            "email": "gsnaxsi@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "VIPNCM\\": "src/"
+        }
+    }
+}
