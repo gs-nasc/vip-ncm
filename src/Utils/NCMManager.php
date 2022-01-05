@@ -60,7 +60,7 @@ class NCMManager {
      * @param string taxaEstadualField
      * @param string taxaMunicipalField
      * 
-     * @return NCM
+     * @return array
      */
     static function fromMap($map, $codigoField, $descricaoField, $taxaNacionalField, $taxaImportadaField, $taxaEstadualField, $taxaMunicipalField) {
         
