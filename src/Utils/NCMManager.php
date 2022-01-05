@@ -67,6 +67,7 @@ class NCMManager {
         $ncms = array();
 
         for ($i=0; $i < count($map); $i++) { 
+            if($i == 0) continue;
             $array = $map[$i];
             $ncm = new NCM();
 
