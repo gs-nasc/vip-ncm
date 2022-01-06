@@ -14,7 +14,7 @@ class FileManager
     {
         FileManager::deleteFile($output);
 
-        $base64 = str_replace("data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,", "", $base64);
+        $base64 = str_replace("data:application/vnd.ms-excel;base64,", "", $base64);
 
         $ifp = fopen($output, "wb");
 
